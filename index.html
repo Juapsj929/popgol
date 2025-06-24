@@ -3,95 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aseo Hogar Colombia</title>
+  <title>CleanCO • Limpieza a Domicilio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica', sans-serif;
-      background: #eef2f3;
-      color: #222;
+      font-family: 'Verdana', sans-serif;
+      background: #f0f4f8;
+      color: #333;
     }
-
     header {
-      background: #1b4965;
+      background: #3282b8;
       color: white;
-      padding: 30px 20px;
       text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-
-    .formulario {
-      background-color: #ffffff;
-      padding: 30px 20px;
-      max-width: 700px;
-      margin: 30px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-    }
-
-    .formulario h2 {
-      text-align: center;
-      color: #1b4965;
-    }
-
-    .formulario input, .formulario select, .formulario button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1em;
-    }
-
-    .formulario button {
-      background: #1b4965;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .formulario button:hover {
-      background: #12384c;
-    }
-
-    .contenedor {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
       padding: 40px 20px;
     }
-
-    .bloque {
+    header h1 { margin: 0; font-size: 2.4em; }
+    header p { font-size: 1.1em; }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .main img {
+      max-width: 400px;
+      border-radius: 12px;
+    }
+    .form {
       background: white;
-      width: 300px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 300px;
     }
-
-    .bloque img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .bloque div {
-      padding: 20px;
-    }
-
-    .bloque h3 {
-      color: #1b4965;
+    .form h2 {
       margin-top: 0;
+      color: #3282b8;
     }
-
+    .form input, .form select, .form button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    .form button {
+      background: #3282b8;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .form button:hover {
+      background: #286a94;
+    }
+    .features {
+      background: white;
+      margin: 40px 20px;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .features h2 {
+      color: #3282b8;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .features .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+    .feature img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
     footer {
-      background: #1b4965;
+      background: #1b263b;
       color: white;
       text-align: center;
       padding: 20px;
@@ -102,53 +105,51 @@
 <body>
 
   <header>
-    <h1>Aseo Hogar Colombia</h1>
-    <p>Limpieza profesional a domicilio en Bogotá y todo el país</p>
+    <h1>CleanCO</h1>
+    <p>Tu servicio de limpieza a domicilio en Colombia</p>
   </header>
 
-  <section class="formulario">
-    <h2>Solicita tu Servicio</h2>
-    <form>
+  <section class="main">
+    <img src="https://via.placeholder.com/400x300?text=Limpieza+profesional" alt="Servicio de limpieza profesional">
+    <form class="form">
+      <h2>Solicita tu cotización</h2>
       <input type="text" placeholder="Nombre completo" required />
-      <input type="tel" placeholder="Teléfono de contacto" required />
-      <input type="text" placeholder="Ciudad / Dirección" required />
+      <input type="tel" placeholder="Teléfono" required />
+      <input type="text" placeholder="Ciudad / Barrio" required />
       <select required>
-        <option value="">Tipo de servicio</option>
+        <option value="">Tipo de limpieza</option>
         <option>Limpieza general</option>
         <option>Aseo profundo</option>
         <option>Oficinas</option>
         <option>Post-construcción</option>
       </select>
-      <button type="submit">Agendar Limpieza</button>
+      <button type="submit">Cotizar Ahora</button>
     </form>
   </section>
 
-  <section class="contenedor">
-    <div class="bloque">
-      <img src="https://th.bing.com/th/id/R.3b5a939f233c83e1a5ea8eeb3ec4ac3e?rik=vETAb2HHLG6ZzQ&pid=ImgRaw&r=0" alt="Limpieza hogar">
-      <div>
-        <h3>Hogar</h3>
-        <p>Servicio puntual, confiable y profesional para tu vivienda.</p>
+  <section class="features">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid">
+      <div class="feature">
+        <img src="https://via.placeholder.com/80?text=🏠" alt="Casas">
+        <h3>Limpieza de Casas</h3>
+        <p>Atención detallada en hogares residenciales.</p>
       </div>
-    </div>
-    <div class="bloque">
-      <img src="https://th.bing.com/th/id/OIP.5QEqbFB0rUE_HrH9ndTY1gHaE7?w=800&h=533&rs=1&pid=ImgDetMain" alt="Limpieza oficina">
-      <div>
-        <h3>Oficinas</h3>
-        <p>Ambientes laborales limpios que elevan tu productividad.</p>
+      <div class="feature">
+        <img src="https://via.placeholder.com/80?text=🏢" alt="Oficinas">
+        <h3>Oficinas y Empresas</h3>
+        <p>Ambientes limpios para mayor productividad.</p>
       </div>
-    </div>
-    <div class="bloque">
-      <img src="https://th.bing.com/th/id/R.ef1c1090f9ff0774b6dcf7347ea61891?rik=InxN0J3fN9sFiQ&pid=ImgRaw&r=0" alt="Limpieza profunda">
-      <div>
-        <h3>Desinfección</h3>
-        <p>Protocolos COVID, baños, cocinas y zonas sensibles.</p>
+      <div class="feature">
+        <img src="https://via.placeholder.com/80?text=🧽" alt="Deep">
+        <h3>Desinfección & Aseo Profundo</h3>
+        <p>Ideal para zonas críticas o sanitización profunda.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025 Aseo Hogar Colombia · Todos los derechos reservados · contacto@aseohogar.co
+    © 2025 CleanCO · Bogotá • Medellín • Cali · contacto@cleanco.co
   </footer>
 
 </body>
