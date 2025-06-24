@@ -3,169 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Limpieza en Casa CO</title>
+  <title>Aseo Hogar Colombia</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fefefe;
-      color: #333;
+      font-family: 'Helvetica', sans-serif;
+      background: #eef2f3;
+      color: #222;
     }
 
     header {
-      background-color: #2b9348;
+      background: #1b4965;
       color: white;
-      text-align: center;
       padding: 30px 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1em;
       margin: 0;
+      font-size: 2.2em;
     }
 
-    .hero {
-      background: url('https://th.bing.com/th/id/R.f8c66f5b8e5f15d82f081af1b8a52e49?rik=SRNwFdx7wcNozQ&pid=ImgRaw&r=0') no-repeat center center/cover;
-      height: 280px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 4px #000;
+    .formulario {
+      background-color: #ffffff;
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    .formulario h2 {
       text-align: center;
-      padding: 0 20px;
+      color: #1b4965;
     }
 
-    .hero h2 {
-      font-size: 2em;
-      margin: 0;
+    .formulario input, .formulario select, .formulario button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
     }
 
-    .btn-cotizar {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #2b9348;
+    .formulario button {
+      background: #1b4965;
       color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 8px;
       font-weight: bold;
+      cursor: pointer;
       transition: 0.3s;
     }
 
-    .btn-cotizar:hover {
-      background-color: #1e6f35;
+    .formulario button:hover {
+      background: #12384c;
     }
 
-    .servicios {
-      padding: 50px 20px;
-      background-color: #f1f1f1;
-      text-align: center;
-    }
-
-    .servicios h2 {
-      color: #2b9348;
-      margin-bottom: 30px;
-    }
-
-    .cards {
+    .contenedor {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      width: 280px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: #2b9348;
-      margin-bottom: 10px;
-    }
-
-    .contacto {
+      gap: 30px;
       padding: 40px 20px;
-      text-align: center;
     }
 
-    .contacto h2 {
-      color: #2b9348;
-      margin-bottom: 15px;
+    .bloque {
+      background: white;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
     }
 
-    .contacto p {
-      margin: 5px 0;
+    .bloque img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .bloque div {
+      padding: 20px;
+    }
+
+    .bloque h3 {
+      color: #1b4965;
+      margin-top: 0;
     }
 
     footer {
-      background-color: #2b9348;
+      background: #1b4965;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Limpieza en Casa CO</h1>
-    <p>Tu casa impecable, sin mover un dedo</p>
+    <h1>Aseo Hogar Colombia</h1>
+    <p>Limpieza profesional a domicilio en Bogotá y todo el país</p>
   </header>
 
-  <section class="hero">
-    <div>
-      <h2>Servicio de limpieza a domicilio en Colombia</h2>
-      <a href="#contacto" class="btn-cotizar">Solicita tu cotización</a>
-    </div>
+  <section class="formulario">
+    <h2>Solicita tu Servicio</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="tel" placeholder="Teléfono de contacto" required />
+      <input type="text" placeholder="Ciudad / Dirección" required />
+      <select required>
+        <option value="">Tipo de servicio</option>
+        <option>Limpieza general</option>
+        <option>Aseo profundo</option>
+        <option>Oficinas</option>
+        <option>Post-construcción</option>
+      </select>
+      <button type="submit">Agendar Limpieza</button>
+    </form>
   </section>
 
-  <section class="servicios">
-    <h2>Servicios Disponibles</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://th.bing.com/th/id/OIP.0iOBlA65gkhWK6njbCskoAHaEK?w=770&h=433&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3" alt="Hogar">
-        <h3>Limpieza de Casas</h3>
-        <p>Aseo profundo o de mantenimiento para tu hogar.</p>
-      </div>
-      <div class="card">
-        <img src="https://th.bing.com/th/id/R.8f6fe4bf40366dc183a286fdfbe8bba7?rik=wHe%2fVfXEWBYTRg&pid=ImgRaw&r=0" alt="Oficina">
-        <h3>Oficinas y Negocios</h3>
-        <p>Espacios limpios para mejorar tu productividad y salud.</p>
-      </div>
-      <div class="card">
-        <img src="https://th.bing.com/th/id/R.fb9b692f663263ba7b802d144c137920?rik=raGDk2d4wExXEg&pid=ImgRaw&r=0" alt="Baños y cocinas">
-        <h3>Baños y Cocinas</h3>
-        <p>Desinfección profesional y detallada en zonas críticas.</p>
+  <section class="contenedor">
+    <div class="bloque">
+      <img src="https://th.bing.com/th/id/R.3b5a939f233c83e1a5ea8eeb3ec4ac3e?rik=vETAb2HHLG6ZzQ&pid=ImgRaw&r=0" alt="Limpieza hogar">
+      <div>
+        <h3>Hogar</h3>
+        <p>Servicio puntual, confiable y profesional para tu vivienda.</p>
       </div>
     </div>
-  </section>
-
-  <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <p>📞 Teléfono: +57 320 000 1122</p>
-    <p>📧 Email: contacto@limpiezaencasa.co</p>
-    <p>📍 Cobertura: Bogotá, Medellín, Cali y más</p>
-    <p>🕐 Horario: Lunes a Sábado - 8:00 a.m. a 6:00 p.m.</p>
+    <div class="bloque">
+      <img src="https://th.bing.com/th/id/OIP.5QEqbFB0rUE_HrH9ndTY1gHaE7?w=800&h=533&rs=1&pid=ImgDetMain" alt="Limpieza oficina">
+      <div>
+        <h3>Oficinas</h3>
+        <p>Ambientes laborales limpios que elevan tu productividad.</p>
+      </div>
+    </div>
+    <div class="bloque">
+      <img src="https://th.bing.com/th/id/R.ef1c1090f9ff0774b6dcf7347ea61891?rik=InxN0J3fN9sFiQ&pid=ImgRaw&r=0" alt="Limpieza profunda">
+      <div>
+        <h3>Desinfección</h3>
+        <p>Protocolos COVID, baños, cocinas y zonas sensibles.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    © 2025 Limpieza en Casa CO. Todos los derechos reservados.
+    © 2025 Aseo Hogar Colombia · Todos los derechos reservados · contacto@aseohogar.co
   </footer>
 
 </body>
