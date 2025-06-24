@@ -3,49 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CleanCO • Limpieza a Domicilio</title>
+  <title>CleanCO - Limpieza a Domicilio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Verdana', sans-serif;
-      background: #f0f4f8;
+      font-family: 'Arial', sans-serif;
+      background: #f1f5f9;
       color: #333;
     }
+
     header {
-      background: #3282b8;
+      background: #0a9396;
       color: white;
       text-align: center;
       padding: 40px 20px;
     }
-    header h1 { margin: 0; font-size: 2.4em; }
-    header p { font-size: 1.1em; }
-    .main {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 40px;
-      max-width: 1000px;
-      margin: auto;
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .main img {
-      max-width: 400px;
-      border-radius: 12px;
+
+    header p {
+      font-size: 1.1em;
+      margin: 0;
     }
-    .form {
+
+    .formulario {
       background: white;
+      max-width: 700px;
+      margin: 40px auto;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      flex: 1;
-      min-width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
     }
-    .form h2 {
-      margin-top: 0;
-      color: #3282b8;
+
+    .formulario h2 {
+      text-align: center;
+      color: #0a9396;
+      margin-bottom: 20px;
     }
-    .form input, .form select, .form button {
+
+    .formulario input, .formulario select, .formulario button {
       width: 100%;
       padding: 12px;
       margin-top: 12px;
@@ -53,48 +52,54 @@
       border: 1px solid #ccc;
       font-size: 1em;
     }
-    .form button {
-      background: #3282b8;
+
+    .formulario button {
+      background-color: #0a9396;
       color: white;
-      cursor: pointer;
       font-weight: bold;
+      cursor: pointer;
       transition: background 0.3s;
+      border: none;
     }
-    .form button:hover {
-      background: #286a94;
+
+    .formulario button:hover {
+      background-color: #00757c;
     }
-    .features {
-      background: white;
-      margin: 40px 20px;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .features h2 {
-      color: #3282b8;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .features .grid {
+
+    .servicios {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+      background: #ffffff;
     }
-    .feature {
-      flex: 1;
-      min-width: 250px;
-      text-align: center;
+
+    .card {
+      width: 300px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
     }
-    .feature img {
-      width: 80px;
-      margin-bottom: 10px;
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
+
+    .card div {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #0a9396;
+      margin-top: 0;
+    }
+
     footer {
-      background: #1b263b;
+      background-color: #0a9396;
       color: white;
       text-align: center;
       padding: 20px;
@@ -106,50 +111,52 @@
 
   <header>
     <h1>CleanCO</h1>
-    <p>Tu servicio de limpieza a domicilio en Colombia</p>
+    <p>Limpieza a domicilio confiable en Colombia 🇨🇴</p>
   </header>
 
-  <section class="main">
-    <img src="https://via.placeholder.com/400x300?text=Limpieza+profesional" alt="Servicio de limpieza profesional">
-    <form class="form">
-      <h2>Solicita tu cotización</h2>
+  <section class="formulario">
+    <h2>Solicita tu servicio</h2>
+    <form>
       <input type="text" placeholder="Nombre completo" required />
-      <input type="tel" placeholder="Teléfono" required />
-      <input type="text" placeholder="Ciudad / Barrio" required />
+      <input type="tel" placeholder="Número de contacto" required />
+      <input type="text" placeholder="Ciudad / Dirección" required />
       <select required>
         <option value="">Tipo de limpieza</option>
-        <option>Limpieza general</option>
-        <option>Aseo profundo</option>
-        <option>Oficinas</option>
-        <option>Post-construcción</option>
+        <option>Hogar</option>
+        <option>Oficina</option>
+        <option>Post-obra</option>
+        <option>Desinfección</option>
       </select>
-      <button type="submit">Cotizar Ahora</button>
+      <button type="submit">Agendar limpieza</button>
     </form>
   </section>
 
-  <section class="features">
-    <h2>Nuestros Servicios</h2>
-    <div class="grid">
-      <div class="feature">
-        <img src="https://via.placeholder.com/80?text=🏠" alt="Casas">
-        <h3>Limpieza de Casas</h3>
-        <p>Atención detallada en hogares residenciales.</p>
+  <section class="servicios">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598515214083-3a6e51c0ff42?auto=format&fit=crop&w=600&q=80" alt="Limpieza hogar">
+      <div>
+        <h3>Limpieza de Hogares</h3>
+        <p>Deja tu casa en manos de profesionales certificados.</p>
       </div>
-      <div class="feature">
-        <img src="https://via.placeholder.com/80?text=🏢" alt="Oficinas">
-        <h3>Oficinas y Empresas</h3>
-        <p>Ambientes limpios para mayor productividad.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618221197033-e4a9d28784c6?auto=format&fit=crop&w=600&q=80" alt="Oficina limpia">
+      <div>
+        <h3>Oficinas y Negocios</h3>
+        <p>Ambientes limpios que mejoran tu productividad.</p>
       </div>
-      <div class="feature">
-        <img src="https://via.placeholder.com/80?text=🧽" alt="Deep">
-        <h3>Desinfección & Aseo Profundo</h3>
-        <p>Ideal para zonas críticas o sanitización profunda.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581579186989-8a0654d4fd86?auto=format&fit=crop&w=600&q=80" alt="Desinfección profunda">
+      <div>
+        <h3>Desinfección Profesional</h3>
+        <p>Ideal para cocinas, baños y zonas de alto contacto.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025 CleanCO · Bogotá • Medellín • Cali · contacto@cleanco.co
+    © 2025 CleanCO · contacto@cleanco.co · Bogotá · Medellín · Cali
   </footer>
 
 </body>
