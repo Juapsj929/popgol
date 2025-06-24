@@ -3,103 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>servicio de limpieza a domicilio CO</title>
+  <title>CleanCO - Limpieza a Domicilio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #f1f5f9;
-      color: #333;
+      font-family: 'Verdana', sans-serif;
+      background-color: #f8fdfc;
+      color: #222;
     }
 
-    header {
-      background: #0a9396;
-      color: white;
+    .formulario-inicio {
+      background: url('https://th.bing.com/th/id/OIP.3ARUBPTzRIyjkNGnB4G7ZQHaE7?w=815&h=543&rs=1&pid=ImgDetMain&cb=idpwebpc2') no-repeat center center/cover;
+      padding: 80px 20px;
       text-align: center;
-      padding: 40px 20px;
+      color: white;
     }
 
-    header h1 {
-      font-size: 2.5em;
+    .formulario-inicio h1 {
+      font-size: 2.8em;
       margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #000;
     }
 
-    header p {
-      font-size: 1.1em;
-      margin: 0;
-    }
-
-    .formulario {
-      background: white;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    }
-
-    .formulario h2 {
-      text-align: center;
-      color: #0a9396;
+    .formulario-inicio p {
+      font-size: 1.2em;
       margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #000;
     }
 
-    .formulario input, .formulario select, .formulario button {
-      width: 100%;
+    .formulario-inicio input,
+    .formulario-inicio select {
       padding: 12px;
-      margin-top: 12px;
+      width: 250px;
       border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-
-    .formulario button {
-      background-color: #0a9396;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
       border: none;
+      margin-top: 12px;
     }
 
-    .formulario button:hover {
-      background-color: #00757c;
+    .formulario-inicio button {
+      padding: 12px 25px;
+      background-color: #004e89;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .formulario-inicio button:hover {
+      background-color: #003b66;
+    }
+
+    .info-contacto {
+      background-color: #e8fff4;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .info-contacto h2 {
+      color: #004e89;
+    }
+
+    .info-contacto p {
+      margin: 10px 0;
+      font-size: 1.1em;
     }
 
     .servicios {
+      background-color: #f0f4f8;
+      padding: 50px 20px;
+    }
+
+    .servicios h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00796b;
+    }
+
+    .tarjetas {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
-      padding: 40px 20px;
-      background: #ffffff;
+      gap: 20px;
     }
 
-    .card {
-      width: 300px;
-      background: #fff;
+    .tarjeta {
+      background-color: white;
+      width: 280px;
+      padding: 20px;
       border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.07);
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
-    .card img {
+    .tarjeta img {
       width: 100%;
       height: 180px;
       object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
-    .card div {
-      padding: 20px;
-    }
-
-    .card h3 {
-      color: #0a9396;
-      margin-top: 0;
+    .tarjeta h3 {
+      color: #004e89;
     }
 
     footer {
-      background-color: #0a9396;
+      background-color: #003b66;
       color: white;
       text-align: center;
       padding: 20px;
@@ -109,54 +120,52 @@
 </head>
 <body>
 
-  <header>
+  <section class="formulario-inicio">
     <h1>CleanCO</h1>
-    <p>servicio de limpieza a domicilio CO</p>
-  </header>
-
-  <section class="formulario">
-    <h2>Solicita tu servicio</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required />
-      <input type="tel" placeholder="Número de contacto" required />
-      <input type="text" placeholder="Ciudad / Dirección" required />
-      <select required>
-        <option value="">Tipo de limpieza</option>
-        <option>Hogar</option>
-        <option>Oficina</option>
-        <option>Post-obra</option>
-        <option>Desinfección</option>
-      </select>
-      <button type="submit">Agendar limpieza</button>
-    </form>
+    <p>Limpieza profesional en tu hogar u oficina, fácil, rápida y segura.</p>
+    <input type="text" placeholder="Nombre completo" /><br>
+    <input type="tel" placeholder="Número de contacto" /><br>
+    <input type="text" placeholder="Ciudad / Dirección" /><br>
+    <select>
+      <option value="">Selecciona tipo de limpieza</option>
+      <option>Hogar</option>
+      <option>Oficina</option>
+      <option>Post-obra</option>
+      <option>Desinfección</option>
+    </select><br>
+    <button>Agendar limpieza</button>
   </section>
 
-  <section class="servicios">
-    <div class="card">
-      <img src="https://th.bing.com/th/id/OIP.6-DRweEmrSQXKte8tqpTrwHaE4?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Limpieza de hogar">
-      <div>
+  <section class="info-contacto" id="info">
+    <h2>¿Cómo funciona?</h2>
+    <p>🧹 Elige el tipo de limpieza</p>
+    <p>📲 Agenda con tus datos</p>
+    <p>✅ Nosotros nos encargamos</p>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <h2>Servicios disponibles</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/R.0711d6b22561818561d51a9137f900ac?rik=ur%2fHAG%2fkgXToFQ&riu=http%3a%2f%2fwww.iqua.net%2fwp-content%2fuploads%2f2015%2f11%2flimpieza.jpg&ehk=jOwMwc5G5aDAVlVOSJElXiK68i87VOqRPVmbskXgXDs%3d&risl=&pid=ImgRaw&r=0" alt="Hogar limpio">
         <h3>Limpieza de Hogares</h3>
-        <p>Deja tu casa en manos de profesionales certificados.</p>
+        <p>Tu espacio siempre fresco, desinfectado y brillante.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="https://th.bing.com/th/id/OIP.27f9eSYn0UBUQQvdRm2QJgHaEK?w=1280&h=720&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Oficinas y negocios">
-      <div>
-        <h3>Oficinas y Negocios</h3>
-        <p>Ambientes limpios que mejoran tu productividad.</p>
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/OIP.tf1owDHwVL9D4gE_G8WAhwHaE8?w=800&h=534&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Oficina">
+        <h3>Oficinas y Comercios</h3>
+        <p>Ambientes profesionales libres de polvo y gérmenes.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="https://th.bing.com/th/id/OIP.wrxY_IUNhBEs3Y9WFJR7oQHaFj?w=800&h=600&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Desinfección profesional">
-      <div>
-        <h3>Desinfección Profesional</h3>
-        <p>Ideal para cocinas, baños y zonas de alto contacto.</p>
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/OIP.rxgxGMTgwH5gJfJGauLdnAHaE8?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Desinfección">
+        <h3>Desinfección Profunda</h3>
+        <p>Ideal para baños, cocinas y zonas de alto contacto.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025 CleanCO · contacto@cleanco.co · Bogotá · Medellín · Cali
+    © 2025 CleanCO · contacto@cleanco.co · Servicio en Bogotá, Medellín, Cali
   </footer>
 
 </body>
